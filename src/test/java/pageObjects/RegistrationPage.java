@@ -28,6 +28,8 @@ public class RegistrationPage extends BasePage {
     WebElement btnContinue;
     @FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
     WebElement msgConfirmation;
+    @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+    public WebElement msgUserAlreadyExists;
 
     //methods
     public void setTxtFirstName(String firstName) {
@@ -57,6 +59,14 @@ public class RegistrationPage extends BasePage {
     public String getConfirmationMsg(){
         try {
             return (msgConfirmation.getText());
+        } catch (Exception e) {
+            return e.getMessage();
+        }
+    }
+
+    public String getUserAlreadyExistsMsg(){
+        try {
+            return (msgUserAlreadyExists.getText());
         } catch (Exception e) {
             return e.getMessage();
         }

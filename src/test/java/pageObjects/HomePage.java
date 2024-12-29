@@ -14,12 +14,14 @@ public class HomePage extends BasePage {
     //locators
     @FindBy(xpath = "//span[normalize-space()='My Account']")
     WebElement lnkMyAccount;
-
     @FindBy(xpath = "//a[normalize-space()='Register']")
     WebElement lnkRegister;
-
     @FindBy(xpath = "//a[normalize-space()='Login']")
     WebElement lnkLogin;
+    @FindBy(xpath = "//a[normalize-space()='Logout']")
+    WebElement linkLogout;
+    @FindBy(xpath = "//a[normalize-space()='Qafox.com']")
+    WebElement linkHomePage;
 
     //methods
     public void clickMyAccount(){
@@ -31,5 +33,10 @@ public class HomePage extends BasePage {
     public void clickLogin(){
         lnkLogin.click();
     }
-
+    public WebElement getLinkLogout(){
+        return linkLogout;
+    }
+    public void clickLnkHomePage(){
+        linkHomePage.click();
+    }
 }

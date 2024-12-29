@@ -3,7 +3,7 @@
 <suite name="Master Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/RPA Base/Projects/opencart/src/test/java/testCases">
         <parameter name="os" value="Windows"/>
-        <parameter name="browser" value="edge"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="testCases.TS_001_TC_RF_001_AccountRegistration">
                 <methods>

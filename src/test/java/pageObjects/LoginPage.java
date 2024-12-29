@@ -23,10 +23,20 @@ public class LoginPage extends BasePage{
     WebElement lblMyAccount;
     @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
     WebElement errInvalidLogin;
+    @FindBy(xpath = "//div[@class='form-group']//a[normalize-space()='Forgotten Password']")
+    WebElement linkForgotPassword;
+    @FindBy(xpath = "//a[normalize-space()='Qafox.com']")
+    WebElement linkHomePage;
 
     //methods
     public void setTxtEmail(String email){
         txtEmail.sendKeys(email);
+    }
+    public String getTxtEmailPlaceholder(){
+        return txtEmail.getAttribute("placeholder");
+    }
+    public String getTxtPasswordPlaceholder(){
+        return txtPassword.getAttribute("placeholder");
     }
     public void setTxtPassword(String password){
         txtPassword.sendKeys(password);
@@ -36,6 +46,12 @@ public class LoginPage extends BasePage{
     }
     public void clickBtnLogout(){
         btnLogout.click();
+    }
+    public void clickLnkForgotPassword(){
+        linkForgotPassword.click();
+    }
+    public void clickLnkHomePage(){
+        linkHomePage.click();
     }
 
     public String getConfirmationMsg(){
@@ -54,4 +70,11 @@ public class LoginPage extends BasePage{
         }
     }
 
+    public String getLinkForgotPassword(){
+        try {
+            return (linkForgotPassword.getText());
+        } catch (Exception e) {
+            return e.getMessage();
+        }
+    }
 }

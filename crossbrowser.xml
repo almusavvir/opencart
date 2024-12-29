@@ -10,7 +10,7 @@
                     <include name="verify_user_registration"/>
                 </methods>
             </class>
-            <class name="testCases.TS_002_TC_LF_001_Login_Functionality">
+            <class name="testCases.TS_002_TC_LF_001_LoginFunctionality">
                 <methods>
                     <include name="verify_login"/>
                     <include name="verify_invalid_login"/>

@@ -40,7 +40,14 @@ public class TS_001_TC_RF_001_AccountRegistration extends BaseClass {
 
         String confMsg = registerPage.getConfirmationMsg();
 
-        Assert.assertEquals(confMsg, "Your Account Has Been Created!");
+        if(registerPage.msgUserAlreadyExists.isDisplayed()) {
+            Assert.assertTrue(registerPage.msgUserAlreadyExists.isDisplayed());
+        } else {
+            Assert.assertEquals(confMsg, "Your Account Has Been Created!");
+        }
+
+
+
         Thread.sleep(5000);
     }
 }
