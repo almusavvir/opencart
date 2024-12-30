@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//a[normalize-space()='Register']")
     WebElement lnkRegister;
     @FindBy(xpath = "//a[normalize-space()='Login']")
-    WebElement lnkLogin;
+    WebElement linkLogin;
     @FindBy(xpath = "//a[normalize-space()='Logout']")
     WebElement linkLogout;
     @FindBy(xpath = "//a[normalize-space()='Qafox.com']")
@@ -31,10 +31,13 @@ public class HomePage extends BasePage {
         lnkRegister.click();
     }
     public void clickLogin(){
-        lnkLogin.click();
+        linkLogin.click();
     }
     public WebElement getLinkLogout(){
         return linkLogout;
+    }
+    public WebElement getLinkLogin(){
+        return linkLogin;
     }
     public void clickLnkHomePage(){
         linkHomePage.click();
