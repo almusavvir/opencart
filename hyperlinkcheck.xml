@@ -3,7 +3,7 @@
 <suite name="Master Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/RPA Base/Projects/opencart/src/test/java/testCases">
         <parameter name="os" value="Windows"/>
-        <parameter name="browser" value="chrome"/>
+        <parameter name="browser" value="headlesschrome"/>
         <classes>
 <!--            <class name="testCases.TS_001_TC_RF_001_AccountRegistration">-->
 <!--                <methods>-->
@@ -11,10 +11,12 @@
 <!--                </methods>-->
 <!--            </class>-->
             <class name="testCases.TS_002_Login_Functionality">
+                <methods>
+                    <include name="TC_HyperLinkCheck"/>
+                </methods>
             </class>
         </classes>
     </test>
 </suite>
-
 
 <!--history !!!!! running remotely from a IR locomotive computer-->

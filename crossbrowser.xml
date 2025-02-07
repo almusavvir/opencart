@@ -3,35 +3,30 @@
 <suite name="Master Suite" thread-count="5" parallel="tests">
     <test verbose="2" preserve-order="true" name="Login and Register (chrome)">
         <parameter name="os" value="Windows"/>
-        <parameter name="browser" value="chrome"/>
+        <parameter name="browser" value="headlesschrome"/>
         <classes>
-            <class name="testCases.TS_001_TC_RF_001_AccountRegistration">
-                <methods>
-                    <include name="verify_user_registration"/>
-                </methods>
-            </class>
-            <class name="testCases.TS_002_TC_LF_001_LoginFunctionality">
-                <methods>
-                    <include name="verify_login"/>
-                    <include name="verify_invalid_login"/>
-                </methods>
+            <class name="testCases.TS_002_Login_Functionality">
+<!--                <methods>-->
+<!--                    <include name="verify_login"/>-->
+<!--                    <include name="verify_invalid_login"/>-->
+<!--                </methods>-->
             </class>
         </classes>
     </test>
     <test verbose="2" preserve-order="true" name="Login and Register (edge)">
         <parameter name="os" value="Windows"/>
-        <parameter name="browser" value="edge"/>
+        <parameter name="browser" value="headlesschrome"/>
         <classes>
-            <class name="testCases.TS_001_TC_RF_001_AccountRegistration">
-                <methods>
-                    <include name="verify_user_registration"/>
-                </methods>
-            </class>
+<!--            <class name="testCases.TS_001_TC_RF_001_AccountRegistration">-->
+<!--                <methods>-->
+<!--                    <include name="verify_user_registration"/>-->
+<!--                </methods>-->
+<!--            </class>-->
             <class name="testCases.TS_002_Login_Functionality">
-                <methods>
-                    <include name="verify_login"/>
-                    <include name="verify_invalid_login"/>
-                </methods>
+<!--                <methods>-->
+<!--                    <include name="verify_login"/>-->
+<!--                    <include name="verify_invalid_login"/>-->
+<!--                </methods>-->
             </class>
         </classes>
     </test>

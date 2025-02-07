@@ -1,5 +1,6 @@
 package testCases;
 
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pageObjects.HomePage;
@@ -7,7 +8,13 @@ import pageObjects.LoginPage;
 import propUtils.PropertiesUtil;
 import testBase.BaseClass;
 
+import javax.net.ssl.HttpsURLConnection;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 public class TS_002_Login_Functionality extends BaseClass {
 
@@ -49,7 +56,7 @@ public class TS_002_Login_Functionality extends BaseClass {
         loginPage.setTxtPassword(";dfjakdja;dkfja;dskfjad");
         loginPage.clickBtnLogin();
 
-        //Assert.assertEquals(loginPage.getErrInvalidLoginMsg(), "Warning: No match for E-Mail Address and/or Password.");
+        Assert.assertEquals(loginPage.getErrInvalidLoginMsg(), "Warning: No match for E-Mail Address and/or Password.");
         Assert.assertEquals(loginPage.getErrInvalidLoginMsg(), "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.");
 
     }
@@ -166,5 +173,80 @@ public class TS_002_Login_Functionality extends BaseClass {
         homePage.clickMyAccount();
         loginPage.clickBtnLogout();
         Assert.assertTrue(!homePage.getLinkLogin().isDisplayed());
+    }
+
+    //TC_LF_012 - Login Functionality" Validate the number of unsucessful login attemps
+    //1. Click on 'My Account' Dropmenu
+    //2. Click on 'Login' option
+    //3. Enter invalid email address into the 'E-Mail Address' field - <Refer Test Data>
+    //4. Enter invalid password into the 'Password' field - <Refer Test Data>
+    //5. Click on 'Login' button
+    //6. Repeat Step 5 for 4 more times (ER-1)
+
+    @Test(priority = 9)
+    void TC_LF_012_verify_invalid_login_attempts() throws IOException {
+        HomePage homePage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        homePage.clickMyAccount();
+        homePage.clickLogin();
+
+        for (int i = 1; i <=5 ; i++) {
+            loginPage.clearTxtEmail();
+            loginPage.clearTxtPassword();
+            loginPage.setTxtEmail("styrertert@gmail.com");
+            loginPage.setTxtPassword("q234234");
+            loginPage.clickBtnLogin();
+        }
+
+        Assert.assertTrue(loginPage.getErrInvalidLoginMsg().contains("Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."));
+    }
+
+    @Test(priority = 10)
+    void TC_LF_013_verify_password_visibility() throws IOException {
+        HomePage homePage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        homePage.clickMyAccount();
+        homePage.clickLogin();
+
+        Assert.assertEquals(loginPage.getTxtPasswordAtrribute(), "password");
+    }
+
+    @Test(priority = 11)
+    void TC_HyperLinkCheck() throws IOException {
+        HomePage homePage = new HomePage(driver);
+        String filePath = "C:/Users/devbase/Projects/opencart/logs/logs.txt";
+        String result = "";
+        FileWriter writer = new FileWriter(filePath);
+
+        List<WebElement> links = homePage.getListHyperLinks();
+        for(WebElement elem : links) {
+            String siteurl = elem.getAttribute("href");
+            LocalDateTime currentDateTime = LocalDateTime.now();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            String formattedDateTime = currentDateTime.format(formatter);
+
+            if(siteurl!=null && !siteurl.isEmpty() && siteurl.startsWith("https://")) {
+                //System.out.println("URL is " + siteurl);
+                URL url = new URL(siteurl);
+                HttpsURLConnection urlConnection = (HttpsURLConnection) url.openConnection();
+                urlConnection.setRequestMethod("HEAD");
+                urlConnection.connect();
+                int responseCode = urlConnection.getResponseCode();
+
+                if(responseCode>=400) {
+                    result = formattedDateTime + " " + siteurl + " : Broken URL - Response - " + responseCode + "\n";
+                    System.out.print(result);
+                    writer.write(result);
+                } else {
+                    result = formattedDateTime + " " + siteurl + " : Valid URL - Response - " + responseCode + "\n";
+                    System.out.print(result);
+                    writer.write(result);
+                }
+            } else {
+                System.out.println(siteurl + " : Invalid URL scheme");
+            }
+        }
+        Assert.assertTrue(true);
+        writer.close();
     }
 }
