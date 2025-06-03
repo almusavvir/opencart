@@ -19,7 +19,6 @@ public class ApiCompare {
         JSONObject obj2 = (JSONObject) new JSONParser().parse(new FileReader("C:\\Users\\devbase\\Projects\\opencart\\resources1\\HybrisAPI.json"));
 
         ObjectMapper mapper = new ObjectMapper();
-        obj1.
 
         Assert.assertEquals(mapper.readTree(obj1.toJSONString()), mapper.readTree(obj2.toJSONString()));
 

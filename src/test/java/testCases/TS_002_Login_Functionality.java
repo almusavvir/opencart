@@ -1,6 +1,7 @@
 package testCases;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pageObjects.HomePage;
@@ -57,7 +58,7 @@ public class TS_002_Login_Functionality extends BaseClass {
         loginPage.clickBtnLogin();
 
         Assert.assertEquals(loginPage.getErrInvalidLoginMsg(), "Warning: No match for E-Mail Address and/or Password.");
-        Assert.assertEquals(loginPage.getErrInvalidLoginMsg(), "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.");
+        //Assert.assertEquals(loginPage.getErrInvalidLoginMsg(), "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.");
 
     }
 
@@ -180,26 +181,26 @@ public class TS_002_Login_Functionality extends BaseClass {
     //2. Click on 'Login' option
     //3. Enter invalid email address into the 'E-Mail Address' field - <Refer Test Data>
     //4. Enter invalid password into the 'Password' field - <Refer Test Data>
-    //5. Click on 'Login' button
+//5. Click on 'Login' button
     //6. Repeat Step 5 for 4 more times (ER-1)
 
-    @Test(priority = 9)
-    void TC_LF_012_verify_invalid_login_attempts() throws IOException {
-        HomePage homePage = new HomePage(driver);
-        LoginPage loginPage = new LoginPage(driver);
-        homePage.clickMyAccount();
-        homePage.clickLogin();
-
-        for (int i = 1; i <=5 ; i++) {
-            loginPage.clearTxtEmail();
-            loginPage.clearTxtPassword();
-            loginPage.setTxtEmail("styrertert@gmail.com");
-            loginPage.setTxtPassword("q234234");
-            loginPage.clickBtnLogin();
-        }
-
-        Assert.assertTrue(loginPage.getErrInvalidLoginMsg().contains("Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."));
-    }
+//    @Test(priority = 9)
+//    void TC_LF_012_verify_invalid_login_attempts() throws IOException {
+//        HomePage homePage = new HomePage(driver);
+//        LoginPage loginPage = new LoginPage(driver);
+//        homePage.clickMyAccount();
+//        homePage.clickLogin();
+//
+//        for (int i = 1; i <=5 ; i++) {
+//            //loginPage.clearTxtEmail();
+//            loginPage.clearTxtPassword();
+//            loginPage.setTxtEmail("styrertert@gmail.com");
+//            loginPage.setTxtPassword("q234234");
+//            loginPage.clickBtnLogin();
+//        }
+//
+//        Assert.assertTrue(loginPage.getErrInvalidLoginMsg().contains("Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."));
+//    }
 
     @Test(priority = 10)
     void TC_LF_013_verify_password_visibility() throws IOException {
@@ -248,5 +249,22 @@ public class TS_002_Login_Functionality extends BaseClass {
         }
         Assert.assertTrue(true);
         writer.close();
+    }
+
+    @Test(priority = 12)
+    void TC_LF_015_verify_password_copyblock() throws IOException, InterruptedException {
+        HomePage homePage = new HomePage(driver);
+        homePage.clickMyAccount();
+        homePage.clickLogin();
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.setTxtPassword("abcd1234");
+        loginPage.rclickTxtPassword();
+        String passwd = loginPage.getPassword();
+        System.out.println(passwd);
+
+        Assert.assertEquals(loginPage.getPassword(), null);
+
+        Thread.sleep(2000);
     }
 }

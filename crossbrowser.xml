@@ -3,7 +3,7 @@
 <suite name="Master Suite" thread-count="5" parallel="tests">
     <test verbose="2" preserve-order="true" name="Login and Register (chrome)">
         <parameter name="os" value="Windows"/>
-        <parameter name="browser" value="headlesschrome"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="testCases.TS_002_Login_Functionality">
 <!--                <methods>-->
@@ -11,11 +11,13 @@
 <!--                    <include name="verify_invalid_login"/>-->
 <!--                </methods>-->
             </class>
+            <class name="testCases.TS_005_Search_Functionality">
+            </class>
         </classes>
     </test>
     <test verbose="2" preserve-order="true" name="Login and Register (edge)">
         <parameter name="os" value="Windows"/>
-        <parameter name="browser" value="headlesschrome"/>
+        <parameter name="browser" value="edge"/>
         <classes>
 <!--            <class name="testCases.TS_001_TC_RF_001_AccountRegistration">-->
 <!--                <methods>-->
@@ -27,6 +29,8 @@
 <!--                    <include name="verify_login"/>-->
 <!--                    <include name="verify_invalid_login"/>-->
 <!--                </methods>-->
+            </class>
+            <class name="testCases.TS_005_Search_Functionality">
             </class>
         </classes>
     </test>

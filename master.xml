@@ -10,11 +10,9 @@
 <!--                    <include name="verify_user_registration"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-            <class name="testCases.TS_002_Login_Functionality">
-            </class>
+            <class name="testCases.TS_002_Login_Functionality"></class>
+            <class name="testCases.TS_005_Search_Functionality"></class>
         </classes>
     </test>
 </suite>
 
-
-<!--history !!!!! running remotely from a IR locomotive computer-->

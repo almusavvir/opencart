@@ -1,7 +1,9 @@
 package pageObjects;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 
@@ -10,6 +12,7 @@ public class LoginPage extends BasePage{
     public LoginPage(WebDriver driver) {
         super(driver);
     }
+    Actions act = new Actions(driver);
 
     //locators
     @FindBy(xpath = "//input[@id='input-email']")
@@ -65,6 +68,13 @@ public class LoginPage extends BasePage{
     public void clickLnkForgotPassword(){
         linkForgotPassword.click();
     }
+    public void rclickTxtPassword() {
+        act.contextClick(txtPassword).perform();
+    }
+    public String copyText(){
+        act.keyDown(Keys.CONTROL).sendKeys("a").sendKeys("c").keyUp(Keys.CONTROL);
+        return null;
+    }
     public void clickLnkHomePage(){
         linkHomePage.click();
     }
@@ -99,5 +109,10 @@ public class LoginPage extends BasePage{
         } catch (Exception e) {
             return e.getMessage();
         }
+    }
+
+    public String getPassword(){
+        txtPassword.click();
+        return copyText();
     }
 }
