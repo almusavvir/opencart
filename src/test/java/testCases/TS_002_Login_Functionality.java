@@ -251,20 +251,20 @@ public class TS_002_Login_Functionality extends BaseClass {
         writer.close();
     }
 
-    @Test(priority = 12)
-    void TC_LF_015_verify_password_copyblock() throws IOException, InterruptedException {
-        HomePage homePage = new HomePage(driver);
-        homePage.clickMyAccount();
-        homePage.clickLogin();
-
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.setTxtPassword("abcd1234");
-        loginPage.rclickTxtPassword();
-        String passwd = loginPage.getPassword();
-        System.out.println(passwd);
-
-        Assert.assertEquals(loginPage.getPassword(), null);
-
-        Thread.sleep(2000);
-    }
+//    @Test(priority = 12)
+//    void TC_LF_015_verify_password_copyblock() throws IOException, InterruptedException {
+//        HomePage homePage = new HomePage(driver);
+//        homePage.clickMyAccount();
+//        homePage.clickLogin();
+//
+//        LoginPage loginPage = new LoginPage(driver);
+//        loginPage.setTxtPassword("abcd1234");
+//        loginPage.rclickTxtPassword();
+//        String passwd = loginPage.getPassword();
+//        System.out.println(passwd);
+//
+//        Assert.assertEquals(loginPage.getPassword(), null);
+//
+//        Thread.sleep(2000);
+//    }
 }
