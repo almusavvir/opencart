@@ -63,6 +63,9 @@ public class HomePage extends BasePage {
     public void typeInSearchBox(String keyword) {
         searchBox.sendKeys(keyword);
     }
+    public void clearSearchBox() {
+        searchBox.clear();
+    }
     public void clickSearchButton(){
         searchButton.click();
     }
@@ -74,5 +77,8 @@ public class HomePage extends BasePage {
     }
     public String getLblNoProductText(){
         return lblNoProduct.getText();
+    }
+    public String getSearchBoxPlaceholder(){
+        return searchBox.getAttribute("placeholder");
     }
 }

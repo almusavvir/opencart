@@ -79,4 +79,15 @@ public class TS_005_Search_Functionality extends BaseClass {
         Assert.assertEquals(homePage.getSecondSearchCardText(), "macbook");
         //Thread.sleep(3000);
     }
+
+    @Test(priority = 5)
+    void TC_SF_006_validate_search_placeholder() throws IOException, InterruptedException {
+        HomePage homePage = new HomePage(driver);
+        homePage.clearSearchBox();
+        homePage.getSearchBoxPlaceholder();
+
+        Assert.assertEquals(homePage.getSearchBoxPlaceholder(), "Search");
+        //Assert.assertEquals(homePage.getSecondSearchCardText(), "macbook");
+        //Thread.sleep(3000);
+    }
 }
