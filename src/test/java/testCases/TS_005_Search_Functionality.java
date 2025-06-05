@@ -90,4 +90,31 @@ public class TS_005_Search_Functionality extends BaseClass {
         //Assert.assertEquals(homePage.getSecondSearchCardText(), "macbook");
         //Thread.sleep(3000);
     }
+
+    @Test(priority = 6)
+    void TC_SF_007_validate_search_criteria() throws IOException, InterruptedException {
+        HomePage homePage = new HomePage(driver);
+        //homePage.clickSearchBox();
+        homePage.clickSearchButton();
+        homePage.clickSearchCriteriaBox();
+        homePage.typeInSearchCriteriaBox("mac");
+        homePage.clickSearchCriteriaButton();
+
+        Assert.assertEquals(homePage.getFirstSearchCardText(), "imac");
+        Assert.assertEquals(homePage.getSecondSearchCardText(), "macbook");
+    }
+
+    @Test(priority = 7)
+    void TC_SF_008_validate_search_product_description() throws IOException, InterruptedException {
+        HomePage homePage = new HomePage(driver);
+        //homePage.clickSearchBox();
+        homePage.clickSearchButton();
+        homePage.clickSearchCriteriaBox();
+        homePage.clearSearchCriteriaBox();
+        homePage.typeInSearchCriteriaBox("iLife");
+        homePage.checkProductCategoryCheckbox();
+        homePage.clickSearchCriteriaButton();
+
+        Assert.assertEquals(homePage.getFirstSearchCardText(), "imac");
+    }
 }

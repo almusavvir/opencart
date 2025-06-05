@@ -28,12 +28,18 @@ public class HomePage extends BasePage {
     WebElement searchBox;
     @FindBy(xpath = "//div[@id='search']/span[@class='input-group-btn']/button[@class='btn btn-default btn-lg']")
     WebElement searchButton;
+    @FindBy(xpath = "//input[@id='button-search']")
+    WebElement searchCriteriaButton;
     @FindBy(xpath = "//div[@id='content']/div[@class='row'][3]/div[@class='product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12']/div[@class='product-thumb']/div[2]/div[@class='caption']/h4/a")
     WebElement firstSearchCardTitle;
     @FindBy(xpath = "//div[@id='content']/div[@class='row'][3]/div[@class='product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12'][2]/div[@class='product-thumb']/div[2]/div[@class='caption']/h4/a")
     WebElement secondSearchCardTitle;
     @FindBy(xpath = "//div[@id='content']/p[2]")
     WebElement lblNoProduct;
+    @FindBy(xpath = "//input[@id='input-search']")
+    WebElement searchCriteriaBox;
+    @FindBy(xpath = "//input[@id='description']")
+    WebElement checkboxProductCategory;
 
     //methods
     public void clickMyAccount(){
@@ -60,14 +66,29 @@ public class HomePage extends BasePage {
     public void clickSearchBox() {
         searchBox.click();
     }
+    public void clickSearchCriteriaBox() {
+        searchCriteriaBox.click();
+    }
+    public void checkProductCategoryCheckbox() {
+        checkboxProductCategory.click();
+    }
     public void typeInSearchBox(String keyword) {
         searchBox.sendKeys(keyword);
+    }
+    public void typeInSearchCriteriaBox(String keyword) {
+        searchCriteriaBox.sendKeys(keyword);
     }
     public void clearSearchBox() {
         searchBox.clear();
     }
+    public void clearSearchCriteriaBox() {
+        searchCriteriaBox.clear();
+    }
     public void clickSearchButton(){
         searchButton.click();
+    }
+    public void clickSearchCriteriaButton(){
+        searchCriteriaButton.click();
     }
     public String getFirstSearchCardText(){
         return firstSearchCardTitle.getText().toLowerCase();
