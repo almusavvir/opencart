@@ -14,14 +14,14 @@ buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${
 # Platforms object contains all the browser / device combinations you want to test on.
 # Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)
 platforms:
-#  - os: OS X
-#    osVersion: Monterey
-#    browserName: Chrome
-#    browserVersion: latest
-  - os: Windows
-    osVersion: 11
+  - os: OS X
+    osVersion: Sierra
     browserName: Chrome
     browserVersion: latest
+#  - os: Windows
+#    osVersion: 11
+#    browserName: Chrome
+#    browserVersion: latest
 #  - deviceName: Samsung Galaxy S22 Ultra
 #    browserName: Samsung
 #    osVersion: 12.0
