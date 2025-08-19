@@ -117,4 +117,6 @@ public class TS_005_Search_Functionality extends BaseClass {
 
         Assert.assertEquals(homePage.getFirstSearchCardText(), "imac");
     }
+
+
 }
