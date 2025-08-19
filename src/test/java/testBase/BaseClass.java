@@ -24,6 +24,7 @@ public class BaseClass {
     @Parameters({"browser"})
     public void setup(@Optional("chrome") String browser) {
 
+        System.setProperty("webdriver.edge.driver", "C:\\Users\\devbase\\Projects\\opencart\\webdriver\\msedgedriver.exe");
         switch (browser.toLowerCase()){
             case "chrome": driver = new ChromeDriver(); break;
             case "edge": driver = new EdgeDriver(); break;
