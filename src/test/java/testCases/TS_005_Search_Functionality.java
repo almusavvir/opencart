@@ -1,5 +1,8 @@
 package testCases;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -116,6 +119,32 @@ public class TS_005_Search_Functionality extends BaseClass {
         homePage.clickSearchCriteriaButton();
 
         Assert.assertEquals(homePage.getFirstSearchCardText(), "imac");
+    }
+
+    @Test(priority = 8)
+    void TC_SF_009_validate_search_by_category() {
+//        1. Don't enter anything into the 'Search' text box field
+//        2. Click on the button having search icon
+//        3. Enter any Product Name into the 'Search Criteria' text box field - <Refer Test Data>
+//        4. Select the correct category of the given Product Name into 'Category' dropdown field - <Refer Test Data>
+//        5. Click on 'Search' button (Validate ER-1)
+//        6. Select a wrong category in tthe 'Category' dropdown field - - <Refer Test Data>
+//        7. Click on 'Search' button (Validate ER-2)
+
+        HomePage homePage = new HomePage(driver);
+        homePage.clickSearchButton();
+        homePage.clickSearchCriteriaBox();
+        homePage.clearSearchCriteriaBox();
+        homePage.typeInSearchCriteriaBox("iMac");
+        homePage.clickSearchCriteriaButton();
+
+        WebElement dropdownElement = driver.findElement(By.name("category_id"));
+        Select dropdown = new Select(dropdownElement);
+        dropdown.selectByValue("27");
+
+        homePage.clickSearchButton();
+        Assert.assertEquals(homePage.getFirstSearchCardText(), "imac");
+
     }
 
 

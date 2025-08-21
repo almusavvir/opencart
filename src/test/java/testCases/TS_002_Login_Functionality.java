@@ -1,5 +1,7 @@
 package testCases;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -213,8 +215,16 @@ public class TS_002_Login_Functionality extends BaseClass {
     }
 
     @Test(priority = 11)
-    void TC_HyperLinkCheck() throws IOException {
+    void TC_HyperLinkCheck() throws IOException, InterruptedException {
         HomePage homePage = new HomePage(driver);
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("alert('Hyperlink check ongoing. Will take 10-15 seconds.');");
+
+        Thread.sleep(2000);
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+
         String filePath = "C:/Users/devbase/Projects/opencart/logs/logs.txt";
         String result = "";
         FileWriter writer = new FileWriter(filePath);
@@ -249,6 +259,7 @@ public class TS_002_Login_Functionality extends BaseClass {
         }
         Assert.assertTrue(true);
         writer.close();
+
     }
 
 //    @Test(priority = 12)

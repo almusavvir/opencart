@@ -3,6 +3,8 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+
 import java.util.List;
 
 public class HomePage extends BasePage {
@@ -40,6 +42,9 @@ public class HomePage extends BasePage {
     WebElement searchCriteriaBox;
     @FindBy(xpath = "//input[@id='description']")
     WebElement checkboxProductCategory;
+//    @FindBy(name = "category_id")
+//    WebElement dropdown;
+//    Select categoryDropdown = new Select(dropdown);
 
     //methods
     public void clickMyAccount(){
@@ -57,6 +62,12 @@ public class HomePage extends BasePage {
     public WebElement getLinkLogin(){
         return linkLogin;
     }
+//    public void clickCategoryDropdown() {
+//        categoryDropdown.click();
+//    }
+//    public void setCatergoryDropdown(String value) {
+//        categoryDropdown.
+//    }
     public void clickLnkHomePage(){
         linkHomePage.click();
     }

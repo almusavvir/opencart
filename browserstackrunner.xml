@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Master Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/RPA Base/Projects/opencart/src/test/java/testCases">
+<!--        <parameter name="os" value="Windows"/>-->
+<!--        <parameter name="browser" value="chrome"/>-->
+        <classes>
+            <class name="testCases.TS_002_Login_Functionality"></class>
+            <class name="testCases.TS_005_Search_Functionality"></class>
+        </classes>
+    </test>
+</suite>
