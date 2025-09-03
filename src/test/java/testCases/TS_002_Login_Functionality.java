@@ -33,7 +33,8 @@ public class TS_002_Login_Functionality extends BaseClass {
     }
 
     @Test(priority = 0)
-    void TC_LF_001_verify_login() throws IOException {
+    void TC_LF_001_verify_login() throws IOException, InterruptedException {
+        Thread.sleep(5000);
         HomePage homePage = new HomePage(driver);
         homePage.clickMyAccount();
         homePage.clickLogin();

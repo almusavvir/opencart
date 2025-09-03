@@ -26,6 +26,7 @@ public class TS_005_Search_Functionality extends BaseClass {
 
     @Test(priority = 0)
     void TC_SF_001_validate_existing_product() throws IOException, InterruptedException {
+        Thread.sleep(5000);
         HomePage homePage = new HomePage(driver);
         homePage.clickSearchBox();
         homePage.typeInSearchBox("iMac");
