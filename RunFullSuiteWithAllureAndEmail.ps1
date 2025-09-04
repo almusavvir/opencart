@@ -10,7 +10,6 @@ mvn clean test "-DsuiteXmlFile=master.xml"
 #    Start-Sleep -Seconds 2
 #}
 
-
 allure generate
 
 allure open

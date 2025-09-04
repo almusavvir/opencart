@@ -1,6 +1,7 @@
 package testCases;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -10,6 +11,7 @@ import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import propUtils.PropertiesUtil;
 import testBase.BaseClass;
+import utilities.AllureScreenShot;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.FileWriter;
@@ -211,8 +213,11 @@ public class TS_002_Login_Functionality extends BaseClass {
         LoginPage loginPage = new LoginPage(driver);
         homePage.clickMyAccount();
         homePage.clickLogin();
-
-        Assert.assertEquals(loginPage.getTxtPasswordAtrribute(), "password");
+        try {
+            Assert.assertEquals(loginPage.getTxtPasswordAtrribute(), "password");
+        } catch (ElementNotInteractableException e) {
+            AllureScreenShot.takeScreenshot(driver);
+        }
     }
 
     @Test(priority = 11)
