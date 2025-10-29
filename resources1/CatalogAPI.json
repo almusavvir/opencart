@@ -1,0 +1,1331 @@
+{
+    "SAP_BOM_DESC": "",
+    "SAP_BRAND_ID": "1338",
+    "SAP_MATERIAL_TYPE": "ZPLU",
+    "applianceType": "SA",
+    "approvalStatus": "approved",
+    "baseOptions": [
+        {
+            "options": [
+                {
+                    "code": "270705",
+                    "url": "/redmi-10-6-pad-wi-fi-android-12-miui-13-tablet-10-61-inches-4gb-ram-128gb-rom-graphite-gray-/p/270705",
+                    "variantOptionQualifiers": []
+                },
+                {
+                    "code": "270706",
+                    "url": "/redmi-pad-wi-fi-android-tablet-10-61-inch-6gb-ram-128gb-rom-graphite-gray-/p/270706",
+                    "variantOptionQualifiers": []
+                },
+                {
+                    "code": "273811",
+                    "url": "/redmi-10-6-pad-wi-fi-android-12-miui-13-tablet-10-61-inch-4gb-ram-128gb-rom-moonlight-silver-/p/273811",
+                    "variantOptionQualifiers": []
+                },
+                {
+                    "code": "273812",
+                    "url": "/redmi-10-6-pad-wi-fi-android-12-miui-13-tablet-10-61-inch-6gb-ram-128gb-rom-moonlight-silver-/p/273812",
+                    "variantOptionQualifiers": []
+                }
+            ],
+            "selected": {
+                "code": "273811",
+                "url": "/redmi-10-6-pad-wi-fi-android-12-miui-13-tablet-10-61-inch-4gb-ram-128gb-rom-moonlight-silver-/p/273811",
+                "variantOptionQualifiers": []
+            },
+            "variantType": "CromaVariantProduct"
+        }
+    ],
+    "buyBackFlag": false,
+    "categoryL0": "3",
+    "categoryL1": "22",
+    "categoryL2": "162",
+    "classifications": [
+        {
+            "code": "Grp-ProductType-T&ICategory",
+            "displayOrder": 1,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-ProductType-T&ICategory.SG-T&ICategory-Connectivity",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Wi-Fi Only"
+                        }
+                    ],
+                    "name": "Connectivity",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-ProductType-T&ICategory.SG-T&ICategory-TabletType",
+                    "comparable": true,
+                    "displayOrder": 1,
+                    "featureValues": [
+                        {
+                            "value": "Android Tablet"
+                        }
+                    ],
+                    "name": "Tablet Type",
+                    "range": false,
+                    "type": "enum"
+                }
+            ],
+            "name": "Tablet & iPad Category"
+        },
+        {
+            "code": "Grp-ManufacturerDetails-ManufacturerDetails",
+            "displayOrder": 5,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-ManufacturerDetails-ManufacturerDetails.SG-ManufacturerDetails-Brand",
+                    "comparable": true,
+                    "displayOrder": 1,
+                    "featureValues": [
+                        {
+                            "value": "Redmi"
+                        }
+                    ],
+                    "name": "Brand",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-ManufacturerDetails-ManufacturerDetails.SG-ManufacturerDetails-ModelSeries",
+                    "comparable": true,
+                    "displayOrder": 2,
+                    "featureValues": [
+                        {
+                            "value": "10.6 Pad"
+                        }
+                    ],
+                    "name": "Model Series",
+                    "range": false,
+                    "type": "string"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-ManufacturerDetails-ManufacturerDetails.SG-ManufacturerDetails-ModelNumber",
+                    "comparable": true,
+                    "displayOrder": 3,
+                    "featureValues": [
+                        {
+                            "value": "VHU4254IN"
+                        }
+                    ],
+                    "name": "Model Number",
+                    "range": false,
+                    "type": "string"
+                }
+            ],
+            "name": "Manufacturer Details"
+        },
+        {
+            "code": "Grp-Dimensions-ProductDimensions-Open",
+            "displayOrder": 7,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Dimensions-ProductDimensions-Open.SG-ProductDimensions-Open-Dimensions-in-CM-(WxDxH)",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "15.81 x 0.71 x 25.05"
+                        }
+                    ],
+                    "name": "Dimensions In CM (WxDxH)",
+                    "range": false,
+                    "type": "string"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Dimensions-ProductDimensions-Open.SG-ProductDimensions-Open--Weight",
+                    "comparable": true,
+                    "featureUnit": {
+                        "symbol": "g",
+                        "unitType": "UoM-g"
+                    },
+                    "featureValues": [
+                        {
+                            "value": "445"
+                        }
+                    ],
+                    "name": "Main Unit Weight",
+                    "range": false,
+                    "type": "number"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Dimensions-ProductDimensions-Open.SG-ProductDimensions-Open-Dimensions-in-Inches-(WxDxH)",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "6.22 x 0.28 x 9.86"
+                        }
+                    ],
+                    "name": "Dimensions In Inches (WxDxH)",
+                    "range": false,
+                    "type": "string"
+                }
+            ],
+            "name": "Product Dimensions (Open)"
+        },
+        {
+            "code": "Grp-OSSpecifications-M&TOperatingSystem",
+            "displayOrder": 10,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-OSSpecifications-M&TOperatingSystem.SG-M&TOperatingSystem-OSType",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Android OS"
+                        }
+                    ],
+                    "name": "OS Type",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-OSSpecifications-M&TOperatingSystem.SG-M&TOperatingSystem-OSName&Version",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Android 12"
+                        }
+                    ],
+                    "name": "OS Name & Version",
+                    "range": false,
+                    "type": "enum"
+                }
+            ],
+            "name": "Operating System"
+        },
+        {
+            "code": "Grp-ProcessingCapacity-M&TProcessorDetails",
+            "displayOrder": 15,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-ProcessingCapacity-M&TProcessorDetails.SG-M&TProcessorDetails-ProcessorName",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Helio G99"
+                        }
+                    ],
+                    "name": "Processor Name",
+                    "range": false,
+                    "type": "string"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-ProcessingCapacity-M&TProcessorDetails.SG-M&TProcessorDetails-ProcessorBrand",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "MediaTek"
+                        }
+                    ],
+                    "name": "Processor Brand",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-ProcessingCapacity-M&TProcessorDetails.SG-M&TProcessorDetails-NoofCores",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "8"
+                        }
+                    ],
+                    "name": "Number of Cores",
+                    "range": false,
+                    "type": "enum"
+                }
+            ],
+            "name": "Processor Details"
+        },
+        {
+            "code": "Grp-Memory&Storage-M&TStorageSpecifications",
+            "displayOrder": 20,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Memory&Storage-M&TStorageSpecifications.SG-M&TStorageSpecifications-MaximumCardCapacity",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "1TB"
+                        }
+                    ],
+                    "name": "Maximum Card Capacity",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Memory&Storage-M&TStorageSpecifications.SG-M&TStorageSpecifications-MemoryCardType",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "SD Card"
+                        }
+                    ],
+                    "name": "Memory Card Type",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Memory&Storage-M&TStorageSpecifications.SG-M&TStorageSpecifications-InternalStorage",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "128GB"
+                        }
+                    ],
+                    "name": "Internal Storage",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Memory&Storage-M&TStorageSpecifications.SG-M&TStorageSpecifications-MemoryCardSupported",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Yes"
+                        }
+                    ],
+                    "name": "Memory Card Supported",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Memory&Storage-M&TStorageSpecifications.SG-M&TStorageSpecifications-RAM",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "4GB"
+                        }
+                    ],
+                    "name": "RAM",
+                    "range": false,
+                    "type": "enum"
+                }
+            ],
+            "name": "Storage Specifications"
+        },
+        {
+            "code": "Grp-Display-M&TScreenSpecifications",
+            "displayOrder": 25,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Display-M&TScreenSpecifications.SG-M&TScreenSpecifications-Brightness",
+                    "comparable": true,
+                    "featureUnit": {
+                        "symbol": "Nits",
+                        "unitType": "UoM-Nits"
+                    },
+                    "featureValues": [
+                        {
+                            "value": "400"
+                        }
+                    ],
+                    "name": "Brightness",
+                    "range": false,
+                    "type": "number"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Display-M&TScreenSpecifications.SG-M&TScreenSpecifications-Type",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Not Available"
+                        }
+                    ],
+                    "name": "Screen Type",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Display-M&TScreenSpecifications.SG-M&TScreenSpecifications-RefreshRate",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "90 Hz"
+                        }
+                    ],
+                    "name": "Refresh Rate",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Display-M&TScreenSpecifications.SG-M&TScreenSpecifications-TouchType",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Multi-Touch"
+                        }
+                    ],
+                    "name": "Touch Type",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Display-M&TScreenSpecifications.SG-M&TScreenSpecifications-Resolution",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "2000 x 1200 pixels"
+                        }
+                    ],
+                    "name": "Screen Resolution",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Display-M&TScreenSpecifications.SG-M&TScreenSpecifications-ScreenSizeinCM",
+                    "comparable": true,
+                    "featureUnit": {
+                        "symbol": "cm",
+                        "unitType": "UoM-cm"
+                    },
+                    "featureValues": [
+                        {
+                            "value": "26.95"
+                        }
+                    ],
+                    "name": "Screen Size in CM",
+                    "range": false,
+                    "type": "number"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Display-M&TScreenSpecifications.SG-M&TScreenSpecifications-PixelDensity",
+                    "comparable": true,
+                    "featureUnit": {
+                        "symbol": "ppi",
+                        "unitType": "UoM-ppi"
+                    },
+                    "featureValues": [
+                        {
+                            "value": "220"
+                        }
+                    ],
+                    "name": "Pixel Density",
+                    "range": false,
+                    "type": "number"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Display-M&TScreenSpecifications.SG-M&TScreenSpecifications-ScreenSizeinInches",
+                    "comparable": true,
+                    "featureUnit": {
+                        "symbol": "Inches",
+                        "unitType": "UoM-Inches"
+                    },
+                    "featureValues": [
+                        {
+                            "value": "10.61"
+                        }
+                    ],
+                    "name": "Screen Size in Inches",
+                    "range": false,
+                    "type": "number"
+                }
+            ],
+            "name": "Screen Specifications"
+        },
+        {
+            "code": "Grp-Audio-Sound",
+            "displayOrder": 70,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Audio-Sound.SG-Sound-SpeakerBrand",
+                    "comparable": true,
+                    "displayOrder": 1,
+                    "featureValues": [
+                        {
+                            "value": "Dolby"
+                        }
+                    ],
+                    "name": "Speaker Brand",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Audio-Sound.SG-Sound-SpeakerType",
+                    "comparable": true,
+                    "displayOrder": 2,
+                    "featureValues": [
+                        {
+                            "value": "Quad Speakers"
+                        }
+                    ],
+                    "name": "Speaker Type",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Audio-Sound.SG-Sound-AuxPort",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Data Not Provided By Brand"
+                        }
+                    ],
+                    "name": "Audio Jack Port",
+                    "range": false,
+                    "type": "enum"
+                }
+            ],
+            "name": "Sound"
+        },
+        {
+            "code": "Grp-Connectivity-SIMDetails",
+            "displayOrder": 80,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Connectivity-SIMDetails.SG-SIMDetails-NumberofSIMsSupported",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Data Not Provided By Brand"
+                        }
+                    ],
+                    "name": "Number of SIMs Supported",
+                    "range": false,
+                    "type": "enum"
+                }
+            ],
+            "name": "SIM Details"
+        },
+        {
+            "code": "Grp-Connectivity-NetworkTechnology",
+            "displayOrder": 85,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Connectivity-NetworkTechnology.SG-NetworkTechnology-DataGenerationSupported",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Not Applicable"
+                        }
+                    ],
+                    "name": "Cellular Technology",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Connectivity-NetworkTechnology.SG-NetworkTechnology-NetworkTechnologySupported",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Not Applicable"
+                        }
+                    ],
+                    "name": "Network Technology Supported",
+                    "range": false,
+                    "type": "enum"
+                }
+            ],
+            "name": "Network Technology"
+        },
+        {
+            "code": "Grp-Connectivity-M&TNetworkConnectivity",
+            "displayOrder": 90,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Connectivity-M&TNetworkConnectivity.SG-M&TNetworkConnectivity-WiFiSupported",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Yes"
+                        }
+                    ],
+                    "name": "Wi-Fi Supported",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Connectivity-M&TNetworkConnectivity.SG-M&TNetworkConnectivity-BluetoothSpecifications",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Bluetooth 5.3"
+                        }
+                    ],
+                    "name": "Bluetooth Specifications",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Connectivity-M&TNetworkConnectivity.SG-M&TNetworkConnectivity-WiFiSpecifications",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Not Applicable"
+                        }
+                    ],
+                    "name": "Wi-Fi Specifications",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Connectivity-M&TNetworkConnectivity.SG-M&TNetworkConnectivity-BluetoothSupported",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Yes"
+                        }
+                    ],
+                    "name": "Bluetooth Supported",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Connectivity-M&TNetworkConnectivity.SG-M&TNetworkConnectivity-WiFiFeatures",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Wi-Fi 5"
+                        }
+                    ],
+                    "name": "Wi-Fi Features",
+                    "range": false,
+                    "type": "string"
+                }
+            ],
+            "name": "Network Connectivity"
+        },
+        {
+            "code": "Grp-Camera-M&TCamera",
+            "displayOrder": 95,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Camera-M&TCamera.SG-M&TCamera-RearCameraConfiguration",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Single Rear Camera"
+                        }
+                    ],
+                    "name": "Camera Configuration",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Camera-M&TCamera.SG-M&TCamera-FrontCameraConfiguration",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Single Front Camera"
+                        }
+                    ],
+                    "name": "Front Camera Configuration",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Camera-M&TCamera.SG-M&TCamera-RearCamera1",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "8MP"
+                        }
+                    ],
+                    "name": "Rear Camera",
+                    "range": false,
+                    "type": "string"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Camera-M&TCamera.SG-M&TCamera-CameraConfiguration",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Built-in Front Camera"
+                        },
+                        {
+                            "value": "Built-in Rear Camera"
+                        }
+                    ],
+                    "name": "Camera Configuration",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Camera-M&TCamera.SG-M&TCamera-FrontCamera1",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "8MP"
+                        }
+                    ],
+                    "name": "Front Camera",
+                    "range": false,
+                    "type": "string"
+                }
+            ],
+            "name": "Camera"
+        },
+        {
+            "code": "Grp-AdditionalInformation-AdditionalFeatures",
+            "displayOrder": 130,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-AdditionalInformation-AdditionalFeatures.SG-AdditionalFeatures-IncludedSoftware",
+                    "comparable": true,
+                    "displayOrder": 1,
+                    "featureValues": [
+                        {
+                            "value": "NA"
+                        }
+                    ],
+                    "name": "Included Software",
+                    "range": false,
+                    "type": "string"
+                }
+            ],
+            "name": "Additional Features"
+        },
+        {
+            "code": "Grp-Power&Battery-Battery",
+            "displayOrder": 150,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Power&Battery-Battery.SG-Battery-Type",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Non-Removable"
+                        }
+                    ],
+                    "name": "Battery Type",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Power&Battery-Battery.SG-Battery-Technology",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Data Not Provided By Brand"
+                        }
+                    ],
+                    "name": "Battery Technology",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Power&Battery-Battery.SG-Battery-Capacity",
+                    "comparable": true,
+                    "featureUnit": {
+                        "symbol": "mAh",
+                        "unitType": "UoM-mAh"
+                    },
+                    "featureValues": [
+                        {
+                            "value": "8000"
+                        }
+                    ],
+                    "name": "Battery Capacity",
+                    "range": false,
+                    "type": "number"
+                }
+            ],
+            "name": "Battery"
+        },
+        {
+            "code": "Grp-Power&Battery-Charging",
+            "displayOrder": 151,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Power&Battery-Charging.SG-Charging-FastChargingCapability",
+                    "comparable": true,
+                    "displayOrder": 1,
+                    "featureValues": [
+                        {
+                            "value": "Yes"
+                        }
+                    ],
+                    "name": "Fast Charging Capability",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Power&Battery-Charging.SG-Charging-OtherChargingFeatures",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "18 Watts Fast Charging"
+                        }
+                    ],
+                    "name": "Additional Charging Features",
+                    "range": false,
+                    "type": "string"
+                }
+            ],
+            "name": "Charging"
+        },
+        {
+            "code": "Grp-Aesthetics-ProductAesthetics",
+            "displayOrder": 210,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Aesthetics-ProductAesthetics.SG-ProductAesthetics-Color",
+                    "comparable": true,
+                    "displayOrder": 1,
+                    "featureValues": [
+                        {
+                            "value": "Moonlight Silver"
+                        }
+                    ],
+                    "name": "Brand Color",
+                    "range": false,
+                    "type": "string"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Aesthetics-ProductAesthetics.SG-ProductAesthetics-ColorFamily",
+                    "comparable": true,
+                    "displayOrder": 2,
+                    "featureValues": [
+                        {
+                            "value": "SILVER"
+                        }
+                    ],
+                    "name": "Color",
+                    "range": false,
+                    "type": "enum"
+                }
+            ],
+            "name": "Aesthetics"
+        },
+        {
+            "code": "Grp-InTheBox-InTheBox",
+            "displayOrder": 220,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-InTheBox-InTheBox.SG-InTheBox",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Data not provided by brand"
+                        }
+                    ],
+                    "name": "Package Includes",
+                    "range": false,
+                    "type": "string"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-InTheBox-InTheBox.SG-InTheBox-MainProduct",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "1 x Tablet U"
+                        }
+                    ],
+                    "name": "Main product",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-InTheBox-InTheBox.SG-InTheBox-GenericName",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Tablet/eReader/eWriter"
+                        }
+                    ],
+                    "name": "Generic Name",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-InTheBox-InTheBox.SG-InTheBox-Documents",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Quick-Start-Guide-AT-SG-IntheBox-Documents"
+                        },
+                        {
+                            "value": "Warranty Card-AT-SG-IntheBox-Documents"
+                        }
+                    ],
+                    "name": "Documents",
+                    "range": false,
+                    "type": "string"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-InTheBox-InTheBox.SG-InTheBox-Accessories",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Charging Adopter-AT-SG-IntheBox-Accessories"
+                        },
+                        {
+                            "value": "USBCable-AT-SG-InTheBox-Accessories"
+                        }
+                    ],
+                    "name": "Accessories",
+                    "range": false,
+                    "type": "string"
+                }
+            ],
+            "name": "In The Box"
+        },
+        {
+            "code": "Grp-Dimensions-ProductPackagedDimensions",
+            "displayOrder": 240,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-Dimensions-ProductPackagedDimensions.SG-ProductPackagedDimensions-Dimensions-in-Inches-(WxDxH)",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Data not provided by brand"
+                        }
+                    ],
+                    "name": "Package Dimensions in Inches (W x D x H)",
+                    "range": false,
+                    "type": "string"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-Dimensions-ProductPackagedDimensions.SG-ProductPackagedDimensions-Dimensions-in-CM-(WxDxH)",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Data not provided by brand"
+                        }
+                    ],
+                    "name": "Package Dimensions in cm (W x D x H)",
+                    "range": false,
+                    "type": "string"
+                }
+            ],
+            "name": "Packaged Dimensions"
+        },
+        {
+            "code": "Grp-AfterSalesService-AfterSales&Services",
+            "displayOrder": 250,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-AfterSalesService-AfterSales&Services.SG-DemoAndInstallationApplicable",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "DATA NOT PROVIDED BY BRAND"
+                        }
+                    ],
+                    "name": "Installation & Demo applicable",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-AfterSalesService-AfterSales&Services.SG-AfterSales&Services-AccessoriesWarrantyPeriod",
+                    "comparable": true,
+                    "featureUnit": {
+                        "symbol": "Months",
+                        "unitType": "UoM-Months"
+                    },
+                    "featureValues": [
+                        {
+                            "value": "-1"
+                        }
+                    ],
+                    "name": "Warranty on Accessories",
+                    "range": false,
+                    "type": "number"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-AfterSalesService-AfterSales&Services.SG-AfterSales&Services-StandardWarrantyPeriod",
+                    "comparable": true,
+                    "displayOrder": 1,
+                    "featureUnit": {
+                        "symbol": "Months",
+                        "unitType": "UoM-Months"
+                    },
+                    "featureValues": [
+                        {
+                            "value": "12"
+                        }
+                    ],
+                    "name": "Warranty on Main Product",
+                    "range": false,
+                    "type": "number"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-AfterSalesService-AfterSales&Services.SG-AfterSales&Services-WarrantyType",
+                    "comparable": true,
+                    "displayOrder": 3,
+                    "featureValues": [
+                        {
+                            "value": "Carry-In"
+                        }
+                    ],
+                    "name": "Warranty Type",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-AfterSalesService-AfterSales&Services.SG-AfterSales&Services-Installation&Demo",
+                    "comparable": true,
+                    "displayOrder": 7,
+                    "featureValues": [
+                        {
+                            "value": "Not Applicable"
+                        }
+                    ],
+                    "name": "Installation & Demo",
+                    "range": false,
+                    "type": "enum"
+                }
+            ],
+            "name": "After Sales Service"
+        },
+        {
+            "code": "Grp-CompanyContactInformation-CompanyContactInformation",
+            "displayOrder": 270,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-CompanyContactInformation-CompanyContactInformation.SG-CompanyContactInformation-CountryofOrigin",
+                    "comparable": true,
+                    "displayOrder": 6,
+                    "featureValues": [
+                        {
+                            "value": "China"
+                        }
+                    ],
+                    "name": "Country of Manufacture",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-CompanyContactInformation-CompanyContactInformation.SG-CompanyContactInformation-CountryofBrand",
+                    "comparable": true,
+                    "displayOrder": 7,
+                    "featureValues": [
+                        {
+                            "value": "China"
+                        }
+                    ],
+                    "name": "Country of Brand Origin",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-CompanyContactInformation-CompanyContactInformation.SG-CompanyContactInformation-CustomerSupportNumber",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "18001036286"
+                        }
+                    ],
+                    "name": "Customer Support Number",
+                    "range": false,
+                    "type": "number"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-CompanyContactInformation-CompanyContactInformation.SG-CompanyContactInformation-CustomerSupportEmail",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "service.in@xiaomi.com"
+                        }
+                    ],
+                    "name": "Customer Support Email",
+                    "range": false,
+                    "type": "string"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-CompanyContactInformation-CompanyContactInformation.SG-CompanyContactInformation-ManufacturerName",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Marketer Name & Address: Xiaomi Technology India Pvt Ltd | No 189-91 Dr Dn Road Opp To Central Bank Of India Fort Mumbai 400001"
+                        }
+                    ],
+                    "name": "Manufacturer/Importer/Marketer Name & Address",
+                    "range": false,
+                    "type": "string"
+                }
+            ],
+            "name": "Company Contact Information"
+        },
+        {
+            "code": "Grp-CompanyContactInformation-CromaContactInformation",
+            "displayOrder": 290,
+            "features": [
+                {
+                    "code": "cromaclassification/1.0/Grp-CompanyContactInformation-CromaContactInformation.SG-CromaContactInformation-RegisteredAddress",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Infiniti Retail Ltd. - Unit No. 701 & 702, 7th Floor, Kaledonia, Sahar Road, Andheri (East); Mumbai - 400069. India"
+                        }
+                    ],
+                    "name": "Registered Name and Address",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-CompanyContactInformation-CromaContactInformation.SG-CromaContactInformation-ContactPerson",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "Grievance Officer"
+                        }
+                    ],
+                    "name": "Customer Care Contact Person",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-CompanyContactInformation-CromaContactInformation.SG-CromaContactInformation-SupportNumber",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "1800 572 7662"
+                        }
+                    ],
+                    "name": "Customer Support Number",
+                    "range": false,
+                    "type": "enum"
+                },
+                {
+                    "code": "cromaclassification/1.0/Grp-CompanyContactInformation-CromaContactInformation.SG-CromaContactInformation-SupportEmail",
+                    "comparable": true,
+                    "featureValues": [
+                        {
+                            "value": "customersupport@croma.com"
+                        }
+                    ],
+                    "name": "Customer Support Email",
+                    "range": false,
+                    "type": "enum"
+                }
+            ],
+            "name": "Croma Service Promise"
+        }
+    ],
+    "code": "273811",
+    "consolidatedVariantsInfo": [
+        {
+            "name": "Data Generation Supported",
+            "value": "Not Applicable",
+            "showSwatch": "false",
+            "sequence": 0
+        },
+        {
+            "name": "Brand Color",
+            "value": "Graphite Grey|Graphite Gray|Moonlight Silver",
+            "sequence": 2
+        },
+        {
+            "name": "RAM",
+            "value": "4GB|6GB",
+            "sequence": 3
+        },
+        {
+            "name": "Internal Storage",
+            "value": "128GB",
+            "showSwatch": "false",
+            "sequence": 4
+        },
+        {
+            "name": "Screen Size in Inches",
+            "value": "10.61",
+            "showSwatch": "false",
+            "sequence": 5
+        }
+    ],
+    "demoFlag": false,
+    "description": "<p><b>Big and Bright Display</b><br/><br/>With the Redmi 10.6 Pad Tablet's expansive 10.61-inch LCD screen and an incredible 2000x1200 resolution, you can catch up on your favourite shows even when you’re on the fly. Besides, its 90Hz refresh rate not only enhances gaming but also reduces eye strain during long hours of reading or browsing.<br/><br/><br/><b>Turbocharged Efficiency</b><br/><br/>Equipped with a speedy 2.2GHz octa-core MediaTek Helio G99 processor and 4GB RAM, this tablet offers fast performance and can uninterruptedly juggle multiple tasks, ensuring a high level of efficiency.<br/><br/><br/><b>Android 12 MIUI 13</b><br/><br/>The intuitive design of the Android 12 MIUI 13 operating system enhances the overall user experience, making it easy for you to perform tasks and navigate through the tablet effortlessly.<br/><br/><br/><b>Wi-Fi 5 Connectivity</b><br/><br/>Enjoy uninterrupted online browsing and streaming with this tab's advanced Wi-Fi 5 technology, which offers fast and trustworthy internet access.<br/><br/><br/><b>Capture Beautiful Photos</b><br/><br/>Boost your photography and videography endeavours with this tablet's 8MP camera, which can capture detailed and vibrant stills and videos. Plus, you can easily attend video conference calls with your co-workers or see your family whenever you miss them with the advanced 8MP front camera of this device.<br/><br/><br/><b>A Wealth of Storage Space</b><br/><br/>Organise your apps, photos, videos, and important documents on the 10.61-inch tab, which is equipped with a capacious internal storage capacity of 128GB. <br/><br/><br/><b>Massive Battery Capacity</b><br/><br/>Delight in uninterrupted entertainment, productivity, and communication on this Redmi tablet, owing to its 8000mAh battery. What’s more, owing to its 18W fast-charging capability, this tablet can swiftly charge up.<br/><br/><br/><b>Split Screen Efficiency</b><br/><br/>When you need to increase productivity and finish difficult jobs quickly, you can effortlessly run up to two windows at the same time on this tab.</p>",
+    "discount": 0.0,
+    "documentInfo": [],
+    "ean": "6941812701324",
+    "finalReviewRating": 0.0,
+    "finalReviewRatingCount": 0.0,
+    "imageInfo": [],
+    "isCSCProduct": true,
+    "isEmiApplicable": "false",
+    "isHighlightAvailable": false,
+    "isPODAvailable": false,
+    "isWarranty": false,
+    "keyFeature1": "10.61 inches (26.95 cm) Display, 90 Hz Refresh Rate",
+    "keyFeature2": "4 GB RAM, 128GB ROM",
+    "keyFeature3": "MediaTek Helio G99, 8 Core",
+    "keyFeature4": "MIUI 13 Android 12",
+    "keyFeature5": "8000 mAh Battery with 18 W Fast Charging",
+    "keyFeature6": "8 MP Rear Camera, 8 MP Front Camera",
+    "manufacturer": "Redmi",
+    "metaRobots": "index,follow",
+    "metaalttag": "Buy Redmi 10.6 Pad Wifi Android 12 MIUI 13 Tablet (10.61 Inch, 4GB RAM, 128GB ROM, Moonlight Silver) Online",
+    "metadescription": "Buy Redmi 10.6 Pad Wifi Android 12 MIUI 13 Tablet (10.61 Inch, 4GB RAM, 128GB ROM, Moonlight Silver) online at best prices from Croma. Check product details, reviews & more. Shop now!",
+    "metatitle": "Buy Redmi 10.6 Pad Wifi Android 12 MIUI 13 Tablet (10.61 Inch, 4GB RAM, 128GB ROM, Moonlight Silver) Online - Croma",
+    "name": "Redmi 10.6 Pad Wi-Fi Android 12 MIUI 13 Tablet (10.61 Inch, 4GB RAM, 128GB ROM, Moonlight Silver)",
+    "numberOfRatings": 0,
+    "numberOfReviews": 0,
+    "onlyRatingCount": 0,
+    "pdpBreadcrumbs": [
+        {
+            "categoryCode": "3",
+            "name": "Computers & Tablets",
+            "url": "/computers-tablets/c/3"
+        },
+        {
+            "categoryCode": "22",
+            "name": "Tablets & eReaders",
+            "url": "/computers-tablets/tablets-ereaders/c/22"
+        },
+        {
+            "categoryCode": "162",
+            "name": "Android Tablets",
+            "url": "/computers-tablets/tablets-ereaders/android-tablets/c/162"
+        },
+        {
+            "name": "Redmi 10.6 Pad Wi-Fi Android 12 MIUI 13 Tablet (10.61 Inch, 4GB RAM, 128GB ROM, Moonlight Silver)",
+            "url": "/redmi-10-6-pad-wi-fi-android-12-miui-13-tablet-10-61-inch-4gb-ram-128gb-rom-moonlight-silver-/p/273811",
+            "linkClass": "active"
+        }
+    ],
+    "quickviewdesc": "<ul> <li>10.61 inches (26.95 cm) Display, 90 Hz Refresh Rate</li> <li>4 GB RAM, 128GB ROM</li> <li>MediaTek Helio G99, 8 Core</li> <li>MIUI 13 Android 12</li> <li>8000 mAh Battery with 18 W Fast Charging</li> <li>8 MP Rear Camera, 8 MP Front Camera</li> <li>FocusFrame, Quad Speakers, Dolby Atmos</li> </ul>",
+    "serviceIcon": [],
+    "specialSKU": false,
+    "standardWarranty": "12",
+    "storeoffer": [],
+    "summary": "E-Redmi 10.6 Tab WIFI 4+128GB SLV",
+    "url": "/redmi-10-6-pad-wi-fi-android-12-miui-13-tablet-10-61-inch-4gb-ram-128gb-rom-moonlight-silver-/p/273811",
+    "variantInfo": [
+        {
+            "name": "Data Generation Supported",
+            "value": "Not Applicable",
+            "sequence": 0
+        },
+        {
+            "name": "Brand Color",
+            "value": "Moonlight Silver",
+            "sequence": 2
+        },
+        {
+            "name": "RAM",
+            "value": "4GB",
+            "sequence": 3
+        },
+        {
+            "name": "Internal Storage",
+            "value": "128GB",
+            "sequence": 4
+        },
+        {
+            "name": "Screen Size in Inches",
+            "value": "10.61",
+            "sequence": 5
+        }
+    ],
+    "variantProductsInfo": [
+        {
+            "code": "270705",
+            "description": "<p><b>Vivid Visuals</b><br/><br/>Whether you're video conferencing, reading books, or watching your favourite shows, the Redmi 10.6 Pad Tablet's 10.61-inch 2000x1200 LCD screen enhances your interactions with captivating clarity. Additionally, its 90Hz refresh rate plays a crucial role in reducing screen tearing, thus giving you a smooth and more visually satisfying viewing experience, especially during high-speed scenes.<br/><br/><br/><b>Lag-Free Multitasking</b><br/><br/>This tablet's efficient 2.2GHz octa-core MediaTek Helio G99 processor and 6GB RAM let you effortlessly switch between multiple apps with ease, thereby boosting your productivity.<br/><br/><br/><b>Android 12 MIUI 13</b><br/><br/>This tablet boasts an Android 12 MIUI 13 operating system that is intuitive and user-friendly, ensuring an enjoyable experience as you effortlessly navigate through apps, settings, and features.<br/><br/><br/><b>Wi-Fi 5 Connectivity</b><br/><br/>With its Wi-Fi 5 technology, this tab provides fast and trustworthy internet access. This way, it ensures a seamless digital experience. <br/><br/><br/><b>Complete Camera System</b><br/><br/>Boost your photography and videography endeavours with this tablet's 8MP camera, which can capture detailed and vibrant stills and videos. Plus, its 8MP front camera ensures that you can have clear face-to-face conversations with your loved ones or co-workers.<br/><br/><br/><b>Expansive Storage</b><br/><br/>Ensure that you never run out of storage space for your media content with the 10.61-inch tab, which features an expansive 128GB storage capacity.<br/><br/><br/><b>Long-Lasting Power</b><br/><br/>With a durable 8000mAh battery providing a life of up to, this Redmi tablet ensures a consistent power supply, making it ideal for extended gaming or video streaming. <br/><br/><br/><b>Dual-Window Productivity</b><br/><br/>Boost efficiency and tackle challenging tasks with ease on this tab by effortlessly running up to two windows simultaneously.</p>",
+            "discount": 0.0,
+            "imageDetails": [],
+            "isEmiApplicable": "false",
+            "name": "Redmi 10.6 Pad Wi-Fi Android 12 MIUI 13 Tablet (10.61 Inches, 4GB RAM, 128GB ROM, Graphite Gray)",
+            "specialSKU": false,
+            "variantInfo": [
+                {
+                    "name": "Data Generation Supported",
+                    "value": "Not Applicable",
+                    "sequence": 0
+                },
+                {
+                    "name": "Brand Color",
+                    "value": "Graphite Grey",
+                    "sequence": 2
+                },
+                {
+                    "name": "RAM",
+                    "value": "4GB",
+                    "sequence": 3
+                },
+                {
+                    "name": "Internal Storage",
+                    "value": "128GB",
+                    "sequence": 4
+                },
+                {
+                    "name": "Screen Size in Inches",
+                    "value": "10.61",
+                    "sequence": 5
+                }
+            ],
+            "video": []
+        },
+        {
+            "code": "270706",
+            "description": "<p><b>Vivid Visuals</b><br/><br/>Whether you're video conferencing, reading books, or watching your favourite shows, the Redmi 10.6 Pad Tablet's 10.61-inch 2000x1200 LCD screen enhances your interactions with captivating clarity. Additionally, its 90Hz refresh rate plays a crucial role in reducing screen tearing, thus giving you a smooth and more visually satisfying viewing experience, especially during high-speed scenes.<br/><br/><br/><b>Lag-Free Multitasking</b><br/><br/>This tablet's efficient 2.2GHz octa-core MediaTek Helio G99 processor and 6GB RAM let you effortlessly switch between multiple apps with ease, thereby boosting your productivity.<br/><br/><br/><b>Android 12 MIUI 13</b><br/><br/>This tablet boasts an Android 12 MIUI 13 operating system that is intuitive and user-friendly, ensuring an enjoyable experience as you effortlessly navigate through apps, settings, and features.<br/><br/><br/><b>Wi-Fi 5 Connectivity</b><br/><br/>With its Wi-Fi 5 technology, this tab provides fast and trustworthy internet access. This way, it ensures a seamless digital experience. <br/><br/><br/><b>Complete Camera System</b><br/><br/>Boost your photography and videography endeavours with this tablet's 8MP camera, which can capture detailed and vibrant stills and videos. Plus, its 8MP front camera ensures that you can have clear face-to-face conversations with your loved ones or co-workers.<br/><br/><br/><b>Expansive Storage</b><br/><br/>Ensure that you never run out of storage space for your media content with the 10.61-inch tab, which features an expansive 128GB storage capacity.<br/><br/><br/><b>Long-Lasting Power</b><br/><br/>With a durable 8000mAh battery providing a life of up to, this Redmi tablet ensures a consistent power supply, making it ideal for extended gaming or video streaming. <br/><br/><br/><b>Dual-Window Productivity</b><br/><br/>Boost efficiency and tackle challenging tasks with ease on this tab by effortlessly running up to two windows simultaneously.</p>",
+            "discount": 0.0,
+            "imageDetails": [],
+            "isEmiApplicable": "false",
+            "name": "Redmi Pad Wi-Fi Android Tablet (10.61 Inch, 6GB RAM, 128GB ROM, Graphite Gray)",
+            "specialSKU": false,
+            "variantInfo": [
+                {
+                    "name": "Data Generation Supported",
+                    "value": "Not Applicable",
+                    "sequence": 0
+                },
+                {
+                    "name": "Brand Color",
+                    "value": "Graphite Gray",
+                    "sequence": 2
+                },
+                {
+                    "name": "RAM",
+                    "value": "6GB",
+                    "sequence": 3
+                },
+                {
+                    "name": "Internal Storage",
+                    "value": "128GB",
+                    "sequence": 4
+                },
+                {
+                    "name": "Screen Size in Inches",
+                    "value": "10.61",
+                    "sequence": 5
+                }
+            ],
+            "video": []
+        },
+        {
+            "code": "273812",
+            "description": "<p><b>Vivid Visuals</b><br/><br/>Whether you're video conferencing, reading books, or watching your favourite shows, the Redmi 10.6 Pad Tablet's 10.61-inch 2000x1200 LCD screen enhances your interactions with captivating clarity. Additionally, its 90Hz refresh rate plays a crucial role in reducing screen tearing, thus giving you a smooth and more visually satisfying viewing experience, especially during high-speed scenes.<br/><br/><br/><b>Lag-Free Multitasking</b><br/><br/>This tablet's efficient 2.2GHz octa-core MediaTek Helio G99 processor and 6GB RAM let you effortlessly switch between multiple apps with ease, thereby boosting your productivity.<br/><br/><br/><b>Android 12 MIUI 13</b><br/><br/>This tablet boasts an Android 12 MIUI 13 operating system that is intuitive and user-friendly, ensuring an enjoyable experience as you effortlessly navigate through apps, settings, and features.<br/><br/><br/><b>Wi-Fi 5 Connectivity</b><br/><br/>With its Wi-Fi 5 technology, this tab provides fast and trustworthy internet access. This way, it ensures a seamless digital experience. <br/><br/><br/><b>Complete Camera System</b><br/><br/>Boost your photography and videography endeavours with this tablet's 8MP camera, which can capture detailed and vibrant stills and videos. Plus, its 8MP front camera ensures that you can have clear face-to-face conversations with your loved ones or co-workers.<br/><br/><br/><b>Expansive Storage</b><br/><br/>Ensure that you never run out of storage space for your media content with the 10.61-inch tab, which features an expansive 128GB storage capacity.<br/><br/><br/><b>Long-Lasting Power</b><br/><br/>With a durable 8000mAh battery providing a life of up to, this Redmi tablet ensures a consistent power supply, making it ideal for extended gaming or video streaming. <br/><br/><br/><b>Dual-Window Productivity</b><br/><br/>Boost efficiency and tackle challenging tasks with ease on this tab by effortlessly running up to two windows simultaneously.</p>",
+            "discount": 0.0,
+            "imageDetails": [],
+            "isEmiApplicable": "false",
+            "name": "Redmi 10.6 Pad Wi-Fi Android 12 MIUI 13 Tablet (10.61 Inch, 6GB RAM, 128GB ROM, Moonlight Silver)",
+            "specialSKU": false,
+            "variantInfo": [
+                {
+                    "name": "Data Generation Supported",
+                    "value": "Not Applicable",
+                    "sequence": 0
+                },
+                {
+                    "name": "Brand Color",
+                    "value": "Moonlight Silver",
+                    "sequence": 2
+                },
+                {
+                    "name": "RAM",
+                    "value": "6GB",
+                    "sequence": 3
+                },
+                {
+                    "name": "Internal Storage",
+                    "value": "128GB",
+                    "sequence": 4
+                },
+                {
+                    "name": "Screen Size in Inches",
+                    "value": "10.61",
+                    "sequence": 5
+                }
+            ],
+            "video": []
+        }
+    ],
+    "video": [],
+    "wiiFlag": false,
+    "classCode": "0498"
+}

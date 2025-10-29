@@ -1,0 +1,41 @@
+
+userName: almusavvirsiddiq_QczgDl
+accessKey: xHwFqVPxVruKKzdPsiAr
+
+projectName: BrowserStack Sample
+# Set `buildName` as the name of the job / testsuite being run
+buildName: opencart-bstack-dev
+
+buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${expression}
+
+# =======================================
+# Platforms (Browsers / Devices to test)
+# =======================================
+# Platforms object contains all the browser / device combinations you want to test on.
+# Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)
+platforms:
+  - os: OS X
+    osVersion: Sonoma
+    browserName: Safari
+    browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+#  - deviceName: Samsung Galaxy S22 Ultra
+#    browserName: Samsung
+#    osVersion: 12.0
+
+parallelsPerPlatform: 1
+
+source: java:intellij:v1.1.6
+
+browserstackLocal: true # <boolean> (Default false)
+debug: false # <boolean> # Set to true if you need screenshots for every selenium command ran
+networkLogs: false # <boolean> Set to true to enable HAR logs capturing
+consoleLogs: errors # <string> Remote browser's console debug levels to be printed (Default: errors)
+# Available options are `disable`, `errors`, `warnings`, `info`, `verbose` (Default: errors)
+
+# Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
+# Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
+testObservability: true
