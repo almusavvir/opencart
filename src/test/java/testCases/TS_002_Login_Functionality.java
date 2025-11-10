@@ -222,7 +222,10 @@ public class TS_002_Login_Functionality extends BaseClass {
 
     @Test(priority = 11)
     void TC_HyperLinkCheck() throws IOException, InterruptedException {
+        String filePath;
         HomePage homePage = new HomePage(driver);
+
+        System.out.println("\nHyperlink Check process - Found OS -> " + System.getProperty("os.name") + "\n");
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("alert('Hyperlink check ongoing. Will take 10-15 seconds.');");
@@ -231,7 +234,8 @@ public class TS_002_Login_Functionality extends BaseClass {
         Alert alert = driver.switchTo().alert();
         alert.accept();
 
-        String filePath = "C:/Users/devbase/Projects/opencart/logs/logs.txt";
+        // 10 Nov added platform independent log folder & file locating
+        filePath = System.getProperty("os.name").equals("Linux") ? "/home/msvr/projects/opencart/logs/logs.txt" : ":C/Users/devbase/Projects/opencart/logs/logs.txt";
         String result = "";
         FileWriter writer = new FileWriter(filePath);
 
@@ -265,7 +269,6 @@ public class TS_002_Login_Functionality extends BaseClass {
         }
         Assert.assertTrue(true);
         writer.close();
-
     }
 
 //    @Test(priority = 12)
