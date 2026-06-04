@@ -235,7 +235,7 @@ public class TS_002_Login_Functionality extends BaseClass {
         alert.accept();
 
         // 10 Nov added platform independent log folder & file locating
-        filePath = System.getProperty("os.name").equals("Linux") ? "/home/msvr/projects/opencart/logs/logs.txt" : ":C/Users/devbase/Projects/opencart/logs/logs.txt";
+        filePath = System.getProperty("os.name").equals("Linux") ? "/home/msvr/projects/opencart/logs/logs.txt" : ":C/Users/msvr/projects/opencart/logs/logs.txt";
         String result = "";
         FileWriter writer = new FileWriter(filePath);
 
